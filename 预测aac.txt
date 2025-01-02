@@ -1,0 +1,27 @@
+acc         : 0.7804
+bacc        : 0.7079
+kappa       : 0.8037
+nw_kappa    : 0.8154
+weighted_f1 : 0.7660
+loss        : 0.6628
+auroc       : 0.9890
+
+acc         : 0.7812
+bacc        : 0.7033
+kappa       : 0.8088
+nw_kappa    : 0.8188
+weighted_f1 : 0.7634
+loss        : 0.6261
+auroc       : 0.9896
+
+acc         : 0.7819
+bacc        : 0.7036
+kappa       : 0.8087
+nw_kappa    : 0.8186
+weighted_f1 : 0.7646
+loss        : 0.6269
+auroc       : 0.9897
+
+import joblib
+joblib.dump(logistic_reg_final, 'logistic_reg_final.model')
+logistic_reg_final = joblib.load('logistic_reg_final.model')
